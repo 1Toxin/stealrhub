@@ -1,4 +1,4 @@
-local Request = http_request or syn and syn.request or request
+local Request = http_request or syn and syn.request or request or nil
 local Invite = 'KenSSB9REN'
 if Request then
     Request(
