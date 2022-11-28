@@ -1,8 +1,9 @@
-id = game.PlaceId
+local id = game.PlaceId
 
-supported = { 8737602449, 11400511154 }
+local supported = { 8737602449, 11400511154 }
 
 if table.find(supported, id) then
   loadstring(game:HttpGet('https://raw.githubusercontent.com/1Toxin/stealrhub/main/'..id))()
 else
   game.Players.LocalPlayer:Kick("Invalid Game")
+end
