@@ -18,5 +18,6 @@ if game.PlaceId == 11400511154 then
   
    loadstring(game:HttpGet('https://raw.githubusercontent.com/1Toxin/stealrhub/main/11400511154'))()
 
-else
+elseif game.PlaceId == 8737602449 then
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/1Toxin/stealrhub/main/8737602449'))()
 end
