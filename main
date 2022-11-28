@@ -23,4 +23,3 @@ if table.find(supported, id) then
   loadstring(game:HttpGet('https://raw.githubusercontent.com/1Toxin/stealrhub/main/'..id))()
 else
   game.Players.LocalPlayer:Kick("Game not supported, join dsc.gg/stealr too find out what games are supported.")
-end)
