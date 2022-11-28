@@ -14,7 +14,7 @@ if Request then
     )
 end
 
-id = game.PlaceId
+local id = game.PlaceId
 
 supported = { 8737602449, 11400511154 }
 
