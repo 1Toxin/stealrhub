@@ -14,12 +14,11 @@ if Request then
     )
 end
 
-if game.PlaceId == 11400511154 then
-  
-   loadstring(game:HttpGet('https://raw.githubusercontent.com/1Toxin/stealrhub/main/11400511154'))()
+id = game.PlaceId
 
-elseif game.PlaceId == 8737602449 then
-   loadstring(game:HttpGet('https://raw.githubusercontent.com/1Toxin/stealrhub/main/8737602449'))()
-else do
-    game.Players.LocalPlayer:Kick("Game not supported, join dsc.gg/stealr too find out what games are supported.")
-end
+supported = { 8737602449, 11400511154 }
+
+if table.find(supported, id) then
+  loadstring(game:HttpGet('https://raw.githubusercontent.com/1Toxin/stealrhub/main/'..id))()
+else
+  game.Players.LocalPlayer:Kick("Game not supported, join dsc.gg/stealr too find out what games are supported.")
