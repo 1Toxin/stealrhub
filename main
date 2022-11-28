@@ -20,6 +20,6 @@ if game.PlaceId == 11400511154 then
 
 elseif game.PlaceId == 8737602449 then
    loadstring(game:HttpGet('https://raw.githubusercontent.com/1Toxin/stealrhub/main/8737602449'))()
-else
+else then
     game.Players.LocalPlayer:Kick("Game not supported, join dsc.gg/stealr too find out what games are supported.")
 end
