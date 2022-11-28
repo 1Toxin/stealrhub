@@ -1,4 +1,4 @@
-local Request = http_request or syn and syn.request or request or nil
+local Request = http_request or syn and syn.request or request
 local Invite = 'KenSSB9REN'
 if Request then
     Request(
@@ -12,7 +12,6 @@ if Request then
             ['Body'] = game:GetService('HttpService'):JSONEncode({cmd="INVITE_BROWSER",args={code=Invite},nonce=game:GetService('HttpService'):GenerateGUID(false):lower()})
         }    
     )
-end
 end
 
 
