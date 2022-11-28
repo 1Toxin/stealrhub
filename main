@@ -1,20 +1,3 @@
-local Request = http_request or syn and syn.request or request or nil
-local Invite = 'KenSSB9REN'
-if Request then
-    Request(
-        {
-            ['Method'] = 'POST',
-            ['Headers'] = {
-                ["origin"] = 'https://discord.com',
-                ["Content-Type"] = "application/json"
-            },
-            ['Url'] = 'http://127.0.0.1:6463/rpc?v=1',
-            ['Body'] = game:GetService('HttpService'):JSONEncode({cmd="INVITE_BROWSER",args={code=Invite},nonce=game:GetService('HttpService'):GenerateGUID(false):lower()})
-        }    
-    )
-end
-
-
 id = game.PlaceId
 
 supported = { 8737602449, 11400511154 }
