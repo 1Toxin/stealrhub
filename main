@@ -18,7 +18,7 @@ end
 
 local id = game.PlaceId
 
-local supported = { 8737602449, 11400511154 }
+local supported = { 8737602449, 11400511154, 9498006165 }
 
 if table.find(supported, id) then
   loadstring(game:HttpGet('https://raw.githubusercontent.com/1Toxin/stealrhub/main/'..id))()
